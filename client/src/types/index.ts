@@ -20,3 +20,11 @@ export interface IUserAtom {
 export interface IModal {
   children: React.ReactNode;
 }
+
+export interface ChatRoom {
+  room_id: number; // 채팅방 ID
+  last_message: string | null; // 마지막 메시지
+  last_message_created_at: string | null; // 마지막 메시지 생성 시간
+  images: string[]; // 참여자의 프로필 이미지 URL 목록
+  names: string[]; // 참여자 이름 목록
+}
